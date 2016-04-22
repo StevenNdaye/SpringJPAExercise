@@ -1,5 +1,11 @@
 package com.thoughtworks.spring.utilities;
 
 public enum FinancialStatus {
-    GOOD_STANDING, DEBT, BANKRUPT
+    GOOD_STANDING(1), DEBT(2), BANKRUPT(3);
+
+    private int status;
+
+    FinancialStatus(int i) {
+        status = i;
+    }
 }

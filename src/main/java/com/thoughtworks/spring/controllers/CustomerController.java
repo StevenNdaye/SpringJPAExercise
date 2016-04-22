@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 @RequestMapping(value = "/customers")
 public class CustomerController {
@@ -18,8 +16,8 @@ public class CustomerController {
 
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Customer> getCustomers() {
-        return (List<Customer>) customerRepository.findAll();
+    public Iterable<Customer> getCustomers() {
+        return customerRepository.findAll();
     }
 
 }
