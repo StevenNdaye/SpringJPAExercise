@@ -28,3 +28,5 @@ INSERT INTO customer (id, first_name, last_name, birth_date, enrollment, status)
 VALUES (14, 'Grace', 'Kibambe', '1982-06-06', '2007-03-20', 2);
 INSERT INTO customer (id, first_name, last_name, birth_date, enrollment, status)
 VALUES (15, 'Stephanie', 'Muka', '1981-06-29', '2007-01-29', 1);
+INSERT INTO customer (id, first_name, last_name, birth_date, enrollment, status)
+VALUES (16, 'Steven', 'Ndaye', '1987-06-26', '2007-01-13', 1);
