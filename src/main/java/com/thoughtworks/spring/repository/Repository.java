@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Date;
+import java.util.List;
 
 public interface Repository extends CrudRepository<Customer, Integer>, JpaSpecificationExecutor<Customer> {
     class Specs {
@@ -19,7 +20,7 @@ public interface Repository extends CrudRepository<Customer, Integer>, JpaSpecif
             return (root, query, cb) -> cb.like(root.get("lastName"), lastName);
         }
 
-        public static Specification<Customer> statusIn(FinancialStatus... statuses) {
+        public static Specification<Customer> statusIn(List<FinancialStatus> statuses) {
             return (root, query, cb) -> cb.isTrue(root.get("status").in(statuses));
         }
 

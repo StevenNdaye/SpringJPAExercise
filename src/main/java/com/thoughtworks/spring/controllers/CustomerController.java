@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -50,7 +51,7 @@ public class CustomerController {
                 where(firstNameIs(firstName))
                         .and(lastNameIs(lastName))
                         .and(birthDateIsBefore(bornBefore))
-                        .and(statusIn(GOOD_STANDING, DEBT)),
+                        .and(statusIn(statuses)),
                 orderByEnrollmentDesc());
     }
 

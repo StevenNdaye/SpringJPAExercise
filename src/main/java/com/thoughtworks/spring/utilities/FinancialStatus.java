@@ -5,7 +5,7 @@ public enum FinancialStatus {
 
     private int status;
 
-    FinancialStatus(int i) {
-        status = i;
+    FinancialStatus(int status) {
+        this.status = status;
     }
 }
