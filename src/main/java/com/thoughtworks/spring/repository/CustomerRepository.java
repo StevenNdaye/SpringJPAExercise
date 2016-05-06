@@ -1,7 +1,7 @@
 package com.thoughtworks.spring.repository;
 
 import com.thoughtworks.spring.entities.Customer;
-import com.thoughtworks.spring.utilities.FinancialStatus;
+import com.thoughtworks.spring.entities.FinancialStatus;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

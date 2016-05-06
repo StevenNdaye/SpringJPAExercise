@@ -1,7 +1,5 @@
 package com.thoughtworks.spring.entities;
 
-import com.thoughtworks.spring.utilities.FinancialStatus;
-
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
