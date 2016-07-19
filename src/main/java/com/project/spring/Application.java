@@ -1,4 +1,4 @@
-package com.thoughtworks.spring;
+package com.project.spring;
 
 import org.springframework.boot.SpringApplication;
 

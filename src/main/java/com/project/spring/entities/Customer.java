@@ -1,4 +1,4 @@
-package com.thoughtworks.spring.entities;
+package com.project.spring.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
