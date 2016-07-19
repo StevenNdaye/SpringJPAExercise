@@ -14,6 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Date;
 import java.util.List;
 
+import static com.project.spring.repository.Repository.Specs.birthDateIsBefore;
+import static com.project.spring.repository.Repository.Specs.birthDateIsBetween;
+import static com.project.spring.repository.Repository.Specs.firstNameIs;
+import static com.project.spring.repository.Repository.Specs.lastNameIs;
+import static com.project.spring.repository.Repository.Specs.orderByEnrollmentDesc;
+import static com.project.spring.repository.Repository.Specs.statusIn;
 import static org.springframework.data.jpa.domain.Specifications.where;
 
 @RestController
